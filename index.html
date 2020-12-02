@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.14.1/lib/theme-chalk/index.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+<!-- Element Cascader 级联选择器,https://element.eleme.cn/#/zh-CN/component/cascader --> 
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui@2.14.1/lib/index.js"></script>
+
+
+<div id="app">
+<div class="block">
+  <span class="demonstration"></span>
+  <el-cascader
+    placeholder="试试搜索：科室/教研室"
+    :options="options"
+    :props="{ multiple: true }"
+    filterable></el-cascader>
+</div>
+</div>
+
+    <script>
+var Main = {
+    data() {
+      return {
+        options: [{
+          value: 'keshi',
+          label: '科室',
+          children: [{
+            value: 'keshi1',
+            label: '综合管理科'
+          }, {
+            value: 'keshi2',
+            label: '质控科'
+          }, {
+            value: 'keshi3',
+            label: '教务科'
+          }, {
+            value: 'keshi4',
+            label: '学生科'
+          }]
+        }, {
+          value: 'jiaoyanshi',
+          label: '教研室',
+          children: [{
+            value: 'jys1',
+            label: '内科学教研室',
+            children: [{
+              value: 'jys11',
+              label: '心血管病学教研室'
+            }, {
+              value: 'jys12',
+              label: '呼吸病学教研室'
+            }, {
+              value: 'jys13',
+              label: '消化病学教研室'
+            }, {
+              value: 'jys14',
+              label: '血液病学教研室'
+            }, {
+              value: 'jys15',
+              label: '肾脏病学教研室'
+            }, {
+              value: 'jys16',
+              label: '内分泌学教研室'
+            }, {
+              value: 'jys17',
+              label: '风湿病学与自体免疫病学教研室'
+            }, {
+              value: 'jys18',
+              label: '感染性疾病学教研室'
+            }, {
+              value: 'jys19',
+              label: '神经病学教研室'
+            }]
+          }, {
+            value: 'jys2',
+            label: '儿科学教研室',
+          }, {
+            value: 'jys3',
+            label: '老年医学教研室',
+          }, {
+            value: 'jys4',
+            label: '神经病学教研室',
+          }, {
+            value: 'jys5',
+            label: '精神病与精神卫生学教研室',
+          }, {
+            value: 'jys6',
+            label: '皮肤病与性病学教研室',
+          }, {
+            value: 'jys7',
+            label: '影像医学与核医学教研室',
+          }, {
+            value: 'jys8',
+            label: '临床检验诊断学教研室',
+          }, {
+            value: 'jys9',
+            label: '护理学教研室',
+          }, {
+            value: 'jys10',
+            label: '外科学教研室',
+            children: [{
+              value: 'jys101',
+              label: '普通外科学教研室'
+            }, {
+              value: 'jys102',
+              label: '神经外科学教研室'
+            }, {
+              value: 'jys103',
+              label: '胸外科学教研室'
+            }, {
+              value: 'jys104',
+              label: '心血管外科学教研室'
+            }, {
+              value: 'jys105',
+              label: '泌尿外科学教研室'
+            }, {
+              value: 'jys106',
+              label: '骨外科学教研室'
+            }, {
+              value: 'jys107',
+              label: '烧伤整形外科学教研室'
+            }, {
+              value: 'jys108',
+              label: '外科学其他学科教研室'
+            }]
+          }, {
+            value: 'jys11',
+            label: '妇产科学教研室',
+            children: [{
+              value: 'jys111',
+              label: '妇科学'
+            }, {
+              value: 'jys112',
+              label: '产科学'
+            }, {
+              value: 'jys113',
+              label: '围产医学'
+            }, {
+              value: 'jys114',
+              label: '助产学'
+            }, {
+              value: 'jys115',
+              label: '胎儿学'
+            }, {
+              value: 'jys116',
+              label: '妇产科手术学'
+            }]
+          }, {
+            value: 'jys12',
+            label: '眼科学教研室',
+          }, {
+            value: 'jys13',
+            label: '耳鼻咽喉科学教研室',
+          }, {
+            value: 'jys14',
+            label: '肿瘤学教研室',
+          }, {
+            value: 'jys15',
+            label: '康复医学与理疗学教研室',
+            children: [{
+              value: 'jys151',
+              label: '康复医学'
+            }, {
+              value: 'jys152',
+              label: '运动医学'
+            }, {
+              value: 'jys153',
+              label: '老年医学'
+            }]
+          }, {
+            value: 'jys16',
+            label: '运动医学教研室',
+          }, {
+            value: 'jys17',
+            label: '麻醉学教研室',
+          }, {
+            value: 'jys18',
+            label: '急诊医学教研室',
+          }]
+        },]
+      };
+    }
+  };
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#app')
+    </script>
+</body> 
+</html>
